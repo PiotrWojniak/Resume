@@ -4,10 +4,11 @@ from flask import Flask
 if os.path.exists("env.py"):
     import env
 
+"""Flask instance"""
 app = Flask(__name__)
 
-
-@app.route("/test")
+"""Test function"""
+@app.route("/")
 def test():
     return "Hello world"
 
