@@ -72,6 +72,7 @@
 }
 
 body {
+  height: 100%;
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -480,6 +481,17 @@ progress {
 
 [hidden] {
   display: none !important;
+}
+
+.profile-image{
+  background: url("media/Zdjecie.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    min-height: 360px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
 .lead {
