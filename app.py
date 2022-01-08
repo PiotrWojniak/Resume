@@ -19,12 +19,23 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
+@app.route("/home")
+def home():
+    return render_template("home.html")
+
 @app.route("/get_courses")
 def get_courses():
     """Course render function"""
     courses = list(mongo.db.courses.find().sort("added", 1))
     courses.reverse()
     return render_template("courses.html", courses=courses)
+
+@app.route("/get_works")
+def get_works():
+    """Course render function"""
+    works = list(mongo.db.courses.find().sort("added", 1))
+    works.reverse()
+    return render_template("works.html", works=works)
 
 
 if __name__ == "__main__":

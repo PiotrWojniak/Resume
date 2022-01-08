@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for work in works %}
+        {{ works.compane_name }}<br>
+        {{ works.position }}<br>
+        {{ works.experience }}<br>
+        {{ works.work_period}}<br>
+    {% endfor %}
+{% endblock %}
