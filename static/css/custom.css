@@ -5,10 +5,19 @@ html{
 }
 
 body {
-    min-height:100%; 
+    height:100%; 
     position:relative; 
     padding-bottom:[footer-height];
     background-color: #f4f4f4;
+}
+
+.home-page {
+    margin-top: auto !important;
+    height: -webkit-fill-available;
+}
+
+.course {
+    height: 70vh;
 }
 
 /*-----------------------colours */
@@ -100,11 +109,11 @@ header {
 
 /*.img-fluid*/
 .logo {
-    background: url("../media/ZdjecieKadrowanie.jpg");
+    background: url("../media/ZdjecieKadrowane2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 360px;
+    min-height: 300px;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
 }
@@ -311,13 +320,13 @@ footer {
 .history-heading {
     color: #fafafa;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .timeline-item {
     padding: 4em 2em 0em 2em;
     position: relative;
     color: #fafafa;
-    border-left: 1px solid;
 }
 
 .timeline-item p {
@@ -390,7 +399,7 @@ button[type="submit"] {
 @media (max-width: 991px) {
     .header-container,
     .footer-container {
-        padding-bottom: 200px;
+        height: calc(140px);
     }
 
     .inline-block {
