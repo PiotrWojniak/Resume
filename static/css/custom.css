@@ -34,7 +34,8 @@ body {
     background-color: #f4f4f4;
 }
 
-.bg-color-work-history {
+.bg-color-education,
+.ui-menu-color-education {
     background-color: #9b59b6;
 }
 
@@ -46,11 +47,9 @@ body {
     background-color: #e67e22;
 }
 
-.ui-menu-color-resume {
-    background-color: #9b59b6;
-}
 
-.ui-menu-color-contact {
+.ui-menu-color-work,
+.bg-color-work {
     background-color: #3498db;
 }
 
