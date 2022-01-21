@@ -42,7 +42,7 @@ def view_course(course_id):
 @app.route("/get_works")
 def get_works():
     """Work render function"""
-    works = list(mongo.db.courses.find().sort("added", 1))
+    works = list(mongo.db.works.find().sort("added", 1))
     works.reverse()
     return render_template("works.html", works=works)
 
